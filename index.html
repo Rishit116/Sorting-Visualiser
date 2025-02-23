@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Algorithm Visualizer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="title">Sorting Algorithm Visualizer</div>
-    <div class="controls">
-        <button onclick="generateArray()">Generate New Array</button>
-        <button onclick="startSort('bubble')">Bubble Sort</button>
-        <button onclick="startSort('selection')">Selection Sort</button>
-        <button onclick="startSort('insertion')">Insertion Sort</button>
-    </div>
-    <div class="speed-control">
-        <label for="speed">Speed:</label>
-        <input type="range" id="speed" min="1" max="100" value="50">
-    </div>
-    <div class="legend">
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: var(--bar-color)"></div>
-            <span>Unsorted</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: var(--comparing-color)"></div>
-            <span>Comparing</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: var(--sorted-color)"></div>
-            <span>Sorted</span>
-        </div>
-    </div>
-    <div class="array-container" id="array-container"></div>
-    <script src="script.js"></script>
+  <div class="title">Sorting Algorithm Visualizer</div>
+  <div class="controls">
+    <button onclick="generateArray()">Generate New Array</button>
+    <button onclick="startSort('bubble')">Bubble Sort</button>
+    <button onclick="startSort('selection')">Selection Sort</button>
+    <button onclick="startSort('insertion')">Insertion Sort</button>
+  </div>
+  <div class="speed-control">
+    <label for="speed">Speed:</label>
+    <input type="range" id="speed" min="1" max="100" value="50" />
+  </div>
+  <div class="array-container" id="array-container"></div>
+  <script src="script.js"></script>
 </body>
 </html>
